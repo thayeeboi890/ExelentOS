@@ -1,6 +1,3 @@
-# exelentos.github.io
-the official ExelentOS website
+# exelentos.github.io maintenance
+if you are here, this is the wrong branch, go to the main branch!
 
-### website
-
-[Click here](https://exelentos.github.io)
