@@ -11,6 +11,15 @@ nav.navbar{
     align-items: center;
     justify-content: space-between;
     padding: 3rem;
+	z-index: 20;
+}
+
+.download-btn {
+  
+
+  top: 50; /* Adjust this value to move the button down */
+  left: 100;
+  transform: translate(500, 5000);
 }
 
 body {
@@ -40,18 +49,47 @@ p {
 =======================*/
 
 .first-section {
-	background-image: url(../img/first-section-bg.png);
-	background-size: cover;
-	background-position: center;
-	width: 100%;
-	height: auto;
-	background-repeat: no-repeat;
-	padding: 20% 0px 20% 0px;
+    background-image: url(../img/first-section-bg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+	background-position: center top;
+    height: auto;
+    background-repeat: no-repeat;
+	background-position: center top;
+	padding: 0;
+
 }
+
+.fade-in {
+  opacity: 0; /* Initially hide the element */
+  animation-fill-mode: forwards; /* Maintain final state after animation */
+}
+
+.delay {
+  animation-delay: 0.5s; /* Delay the start of the animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Start with 0 opacity */
+  }
+  to {
+    opacity: 1; /* Fade to full opacity */
+  }
+}
+
+/* Apply the animation to the element */
+.fade-in {
+  animation-name: fadeIn;
+  animation-duration: 1s;
+}
+
 
 .first-section .text-content {
 	text-align: right;
 	color: #fff;
+	margin-top: -450px; /* Adjust the value as needed */
 }
 
 .first-section .text-content h2 {

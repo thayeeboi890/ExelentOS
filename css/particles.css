@@ -1,0 +1,9 @@
+#particles-js {
+
+  background: rgba(100, 148, 237, 0);
+
+}
+.particle-system {
+	position: relative;
+	z-index: 0;
+}

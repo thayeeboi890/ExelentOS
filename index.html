@@ -8,10 +8,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-<!--
-Template 2091 Ziggy
-http://www.tooplate.com/view/2091-ziggy
--->
+        <script src="js/particles.js"></script>
         <title>ExelentOS</title>
 
         <link rel="icon" type="image/x-icon" href="img/exelent.png">
@@ -23,6 +20,7 @@ http://www.tooplate.com/view/2091-ziggy
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/particles.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -36,7 +34,26 @@ http://www.tooplate.com/view/2091-ziggy
             color: white;
           }
         </style>
+          <style>
+    #background-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background-image: url('path/to/your-image.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #particles-js {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
     </head>
+
     <body>
         
         <nav class="navbar">
@@ -51,26 +68,147 @@ http://www.tooplate.com/view/2091-ziggy
             </a></div>
           </ul>
         </nav>
-
         <section class="first-section">
+            <div id="particles-js"></div>
+<div id="particles-js"></div><!-- stats - count particles -->
+  <script>
+    particlesJS('particles-js', {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": {
+            "enable": true,
+            "value_area": 800
+          }
+        },
+        "color": {
+          "value": "#ffffff"
+        },
+        "shape": {
+          "type": "circle",
+          "stroke": {
+            "width": 0,
+            "color": "#000000"
+          },
+          "polygon": {
+            "nb_sides": 5
+          },
+          "image": {
+            "src": "img/github.svg",
+            "width": 100,
+            "height": 100
+          }
+        },
+        "opacity": {
+          "value": 0.5,
+          "random": false,
+          "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+          }
+        },
+        "size": {
+          "value": 0,
+          "random": true,
+          "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+          }
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#ffffff",
+          "opacity": 0.4,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 6,
+          "direction": "none",
+          "random": false,
+          "straight": false,
+          "out_mode": "out",
+          "bounce": false,
+          "attract": {
+            "enable": false,
+            "rotateX": 600,
+            "rotateY": 1200
+          }
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": {
+            "enable": true,
+            "mode": "repulse"
+          },
+          "onclick": {
+            "enable": true,
+            "mode": "push"
+          },
+          "resize": true
+        },
+        "modes": {
+          "grab": {
+            "distance": 400,
+            "line_linked": {
+              "opacity": 1
+            }
+          },
+          "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+          },
+          "repulse": {
+            "distance": 200,
+            "duration": 0.4
+          },
+          "push": {
+            "particles_nb": 4
+          },
+          "remove": {
+            "particles_nb": 2
+          }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+
+<div id=”particle”></div>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <div class="text-content">
-                  <h2>ExelentOS</h2>
+                  <h2 class="fade-in">ExelentOS</h2>
                   <div class="line-dec"></div>
-              <span>The best distro for linux begginers<span>
-                <i> <p style="color: white;">linux distro based off of ArchLinux</p> </i>
-<a href="./download.html" target="_blank">
-  <button style="color: black; font-weight: bold;">Download</button>
-</a>
+              <span class="fade-in">The best distro for linux begginers<span>
+                <i> <p style="color: white;" class="fade-in">linux distro based off of ArchLinux</p> </i>
+                    <div class="btns">
+                        <div class="download-btn">
+                                                                      
+
+
+                        </div>
+           
                 </div>
               </div>
             </div>
           </div>
       <br />
+
       <br />
-      
+ </div>     
         </section>
 
         <section class="second-section">
@@ -120,6 +258,7 @@ http://www.tooplate.com/view/2091-ziggy
         </section>
 
              <footer>
+                                             
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -134,7 +273,7 @@ http://www.tooplate.com/view/2091-ziggy
             </div>
           </div>
         </footer>
-
+                            
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script>
@@ -153,6 +292,131 @@ http://www.tooplate.com/view/2091-ziggy
   <!--      <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/plugins.js"></script>
 <script src="js/main.js"></script> -->
-
+    <script src=
+        "js/particles.js">
+    </script>
+    <script src=”https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.js"></script>
+    <script>
+        var config = {
+    particles: {
+        number: {
+            value: 150,
+            density: {
+                enable: true,
+                value_area: 786,
+            },
+        },
+        color: {
+            value: ["#ffffff", "#FF6F91", "#F9F871", "#D65DB1"],
+        },
+        shape: {
+            type: "circle",
+            stroke: {
+                width: 0,
+                color: "#000000",
+            },
+            polygon: {
+                nb_sides: 12,
+            },
+            image: {
+                src: "",
+                width: 100,
+                height: 100,
+            },
+        },
+        opacity: {
+            value: 1,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 1,
+                opacity_min: 0,
+                sync: false,
+            },
+        },
+        size: {
+            value: 2.5,
+            random: true,
+            anim: {
+                enable: true,
+                speed: 3,
+                size_min: 0.3,
+                sync: false,
+            },
+        },
+        line_linked: {
+            enable: false,
+            distance: 100,
+            color: "#fff",
+            opacity: 0.023674428,
+            width: 1,
+        },
+        move: {
+            enable: true,
+            speed: 1.3,
+            direction: "top",
+            random: true,
+            straight: true,
+            out_mode: "out",
+            bounce: false,
+            attract: {
+                enable: true,
+                rotateX: 2082.2488,
+                rotateY: 3363.6328,
+            },
+        },
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: {
+                enable: true,
+                mode: "grab",
+            },
+            onclick: {
+                enable: true,
+                mode: "repulse",
+            },
+            resize: true,
+        },
+        modes: {
+            grab: {
+                distance: 70,
+                line_linked: {
+                    opacity: 0.25,
+                },
+            },
+            bubble: {
+                distance: 100,
+                size: 5,
+                duration: 8.598243,
+                opacity: 0,
+                speed: 3,
+            },
+            repulse: {
+                distance: 150,
+                duration: 0.8,
+            },
+            push: {
+                particles_nb: 4,
+            },
+            remove: {
+                particles_nb: 2,
+            },
+        },
+    },
+    retina_detect: true,
+};
+</script>
+<script>
+    window.onload = function() {
+ let clause = window.innerWidth < 768;
+ config.particles.number.value = clause ? 80 : 150;
+ particlesJS(“particle”, config);
+};
+</script>
+<script>
+</script>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     </body>
 </html>
