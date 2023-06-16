@@ -12,7 +12,7 @@
         <title>ExelentOS Download</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
         <link rel="icon" type="image/x-icon" href="img/exelent.png">
-        <script src="js/particles.js"></script>
+        <script src="js/ptl.js"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -24,7 +24,7 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/download.css">
-
+        <link rel="stylesheet" href="css/particles.css">
         <style>
           a{
             color: white;
@@ -51,12 +51,14 @@
         
 
         <section class="first-section" style="margin-bottom: -500px; ">
-            <div id="particles-js"></div>
+            <div id="particles-js">
                       <script>
-    particlesJS('particles-js', {
+                          
+particlesJS('particles-js', {
       "particles": {
+          "y": 9900,
         "number": {
-          "value": 100,
+          "value": 10,
           "density": {
             "enable": true,
             "value_area": 800
@@ -110,7 +112,7 @@
         "move": {
           "enable": true,
           "speed": 6,
-          "direction": "none",
+          "direction": "up",
           "random": false,
           "straight": false,
           "out_mode": "out",
@@ -162,8 +164,17 @@
         }
       },
       "retina_detect": true
+        
     });
+    particlesJS.particles.moveTo(0, 1009999999999999);
   </script>
+  </script>
+  <style>
+particles-js {
+  transform: translateY(-100px);
+}
+  </style>
+  
   <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -191,7 +202,7 @@
         <div style="background-image: url(./img/downloadbg.png);">
 
         </div>
-
+        </div>
              <footer>
            <div>                                  
                <div class="footedr-wrapper">
