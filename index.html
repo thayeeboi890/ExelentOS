@@ -18,7 +18,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/particles.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -54,7 +54,7 @@
   </style>
     </head>
 
-    <body>
+    <body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
         
         <nav class="navbar">
           <div id="navbar" class="vitunix">
@@ -72,133 +72,111 @@
             <div id="particles-js"></div>
 <div id="particles-js"></div><!-- stats - count particles -->
   <script>
-    particlesJS('particles-js', {
-      "particles": {
-        "number": {
-          "value": 100,
-          "density": {
-            "enable": true,
-            "value_area": 800
-          }
-        },
-        "color": {
-          "value": "#ffffff"
-        },
-        "shape": {
-          "type": "circle",
-          "stroke": {
-            "width": 0,
-            "color": "#000000"
-          },
-          "polygon": {
-            "nb_sides": 5
-          },
-          "image": {
-            "src": "img/github.svg",
-            "width": 100,
-            "height": 100
-          }
-        },
-        "opacity": {
-          "value": 0.5,
-          "random": false,
-          "anim": {
-            "enable": false,
-            "speed": 1,
-            "opacity_min": 0.1,
-            "sync": false
-          }
-        },
-        "size": {
-          "value": 0,
-          "random": true,
-          "anim": {
-            "enable": false,
-            "speed": 40,
-            "size_min": 0.1,
-            "sync": false
-          }
-        },
-        "line_linked": {
-          "enable": true,
-          "distance": 150,
-          "color": "#ffffff",
-          "opacity": 0.4,
-          "width": 1
-        },
-        "move": {
-          "enable": true,
-          "speed": 6,
-          "direction": "none",
-          "random": false,
-          "straight": false,
-          "out_mode": "out",
-          "bounce": false,
-          "attract": {
-            "enable": false,
-            "rotateX": 600,
-            "rotateY": 1200
-          }
-        }
+ particlesJS('particles-js', {
+  "particles": {
+    "number": {
+      "value": 200,
+      "density": {
+        "enable": true,
+        "value_area": 1000
+      }
+    },
+    "shape": {
+      "type": "star",
+      "stroke": {
+        "width": 0,
+        "color": "#ffffff"
       },
-      "interactivity": {
-        "detect_on": "canvas",
-        "events": {
-          "onhover": {
-            "enable": true,
-            "mode": "repulse"
-          },
-          "onclick": {
-            "enable": true,
-            "mode": "push"
-          },
-          "resize": true
-        },
-        "modes": {
-          "grab": {
-            "distance": 400,
-            "line_linked": {
-              "opacity": 1
-            }
-          },
-          "bubble": {
-            "distance": 400,
-            "size": 40,
-            "duration": 2,
-            "opacity": 8,
-            "speed": 3
-          },
-          "repulse": {
-            "distance": 200,
-            "duration": 0.4
-          },
-          "push": {
-            "particles_nb": 4
-          },
-          "remove": {
-            "particles_nb": 2
-          }
-        }
+      "polygon": {
+        "nb_sides": 5
       },
-      "retina_detect": true
-    });
-  </script>
-</body>
+      "image": {
+        "src": "img/star.png",
+        "width": 100,
+        "height": 100
+      }
+    },
+    "color": {
+      "value": "#ffffff"
+    },
+    "opacity": {
+      "value": 0.5,
+      "random": true,
+      "anim": {
+        "enable": true,
+        "speed": 1,
+        "opacity_min": 0.1,
+        "sync": false
+      }
+    },
+    "size": {
+      "value": 3,
+      "random": true,
+      "anim": {
+        "enable": false,
+        "speed": 4,
+        "size_min": 0.3,
+        "sync": false
+      }
+    },
+    "line_linked": {
+      "enable": false
+    },
+    "move": {
+      "enable": true,
+      "speed": 2,
+      "direction": "top",
+      "random": true,
+      "straight": false,
+      "out_mode": "out",
+      "bounce": false,
+      "attract": {
+        "enable": false,
+        "rotateX": 600,
+        "rotateY": 1200
+      }
+    }
+  },
+  "interactivity": {
+    "detect_on": "canvas",
+    "events": {
+      "onhover": {
+        "enable": false
+      },
+      "onclick": {
+        "enable": false
+      },
+      "resize": true
+    }
+  },
+  "retina_detect": true
+});
 
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+  particlesJS.load('particles-js', 'js/particles-config.json', function () {
+    console.log('particles.json loaded...');
+  });
+</script>
+  <script>
+    AOS.init();
+  </script>
 <div id=”particle”></div>
           <div class="container">
             <div class="row">
               <div class="col-md-12">
                 <div class="text-content">
+                    <div class="main aos-init aos-animate" data-aos="fade-down">
                   <h2 class="fade-in">ExelentOS</h2>
                   <div class="line-dec"></div>
               <span class="fade-in">The best distro for linux beginners<span>
-                <i> <p style="color: white;" class="fade-in">linux distro based off of ArchLinux</p> </i>
+                <i> <p style="color: white; " class="fade-in">linux distro based off of ArchLinux</p> </i>
                     <div class="btns">
                         <div class="download-btn">
                                                                       
 
-
+                            </div>
                         </div>
            
                 </div>
@@ -212,6 +190,7 @@
         </section>
 
         <section class="second-section">
+            <div data-aos="fade-down">
           <div class="container">
             <div class="row">
 
@@ -255,10 +234,11 @@
 </div> -->
             </div>
           </div>
+          </div>
         </section>
 
              <footer>
-                                             
+           <div data-aos="fade-down">                                  
           <div class="container">
             <div class="row">
               <div class="col-md-12">
@@ -271,6 +251,7 @@
                 <p>Copyright &copy; 2023 NEOLabs </p>
               </div>
             </div>
+          </div>
           </div>
         </footer>
                             

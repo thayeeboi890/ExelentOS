@@ -1,3 +1,13 @@
+
+.footer-wrapper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #202020;
+  padding: 20px 0;
+  color: white;
+}
 nav.navbar{
     position: fixed;
     top: 0;
@@ -54,13 +64,14 @@ p {
 =======================*/
 
 .first-section {
-	background-image: url(../img/download.png);
-	background-size: cover;
+	background-image: url(../img/downloadbg.png);
+	background-size: contain;
 	background-position: center;
 	width: 100%;
 	height: auto;
 	background-repeat: no-repeat;
 	padding: 20% 0px 20% 0px;
+	background-position: center top;
 }
 
 .first-section .text-content {
@@ -388,11 +399,13 @@ footer {
 	background-size: cover;
 	width: 100%;
 	background-repeat: no-repeat;
-	padding: 15% 0px 4% 0px;
+	
+  padding: 0px;
+
 }
 
 footer ul {
-	padding: 0;
+	padding: -200;
 	margin: 0;
 	list-style: none;
 }
@@ -966,4 +979,14 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
+}
+
+footer {
+	text-align: center;
+	background-image: url(../img/temp.png);
+	background-size: cover;
+	position: static;
+	width: 100%;
+	background-repeat: no-repeat;
+	padding: 0px 0px 14% 0px;
 }
