@@ -1,4 +1,28 @@
+#slide-img{
+    max-width: 700px;
+    transition: all ease-in-out 400ms;
+}
 
+.showcase{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.showcase h1.show-title{
+    font-size: 2rem;
+    color: var(--bg-col);
+}
+
+.slideshow{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 2rem;
+}
 .footer-wrapper {
   position: fixed;
   left: 0;
@@ -986,10 +1010,10 @@ footer {
 	background-image: url(../img/temp.png);
 	background-size: cover;
   position: absolute;
-  top: 1100px;
+  top: 1200px;
   right: 0;
   width: 200px;
-  height: 357px;
+  height: 200px;
 	width: 100%;
 	background-repeat: no-repeat;
 	padding: 15% 0px 10% 0px;
