@@ -70,7 +70,7 @@ p {
 	width: 100%;
 	height: auto;
 	background-repeat: no-repeat;
-	padding: 20% 0px 20% 0px;
+	padding: 20% 0px 40% 0px;
 	background-position: center top;
 }
 
@@ -400,7 +400,7 @@ footer {
 	width: 100%;
 	background-repeat: no-repeat;
 	
-  padding: 0px;
+  	padding: 0px;
 
 }
 
@@ -985,8 +985,12 @@ footer {
 	text-align: center;
 	background-image: url(../img/temp.png);
 	background-size: cover;
-	position: static;
+  position: absolute;
+  top: 1100px;
+  right: 0;
+  width: 200px;
+  height: 357px;
 	width: 100%;
 	background-repeat: no-repeat;
-	padding: 0px 0px 14% 0px;
+	padding: 15% 0px 10% 0px;
 }
