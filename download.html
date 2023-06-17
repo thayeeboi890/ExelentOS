@@ -10,16 +10,20 @@
       <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 
         <title>ExelentOS Download</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
         <link rel="icon" type="image/x-icon" href="img/exelent.png">
         <script src="js/ptl.js"></script>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
         <link rel="stylesheet" href="css/style.css">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
@@ -173,8 +177,17 @@ particles-js {
   transform: translateY(-100px);
 }
   </style>
-  
+          <script>
+            AOS.init();
+        </script>
+<script>
+  window.addEventListener('load', function() {
+    AOS.refresh();
+  });
+</script>
+
   <div class="container">
+      <div class="flipan">
             <div class="row">
               <div class="col-md-12">
                 <div class="text-content" style = "position:absolute; left:450px; top:-770px;">
@@ -183,18 +196,25 @@ particles-js {
                 <div style = "position:absolute; left:350px; top:-800px;">
                     <img src="img/dwnsect.png" width="500px" height="500px"`>
                     <h3 style = "position:absolute; left:60px; top:110px;">download ExelentOS Andromeda</h3>
-                    <img src="img/download.png" style = "position:absolute; left:200px; top:180px; " width="100" height="100">
-                    <a href="https://sourceforge.net/projects/vitunix/files/vitunix-2023.03.12-x86_64/" style="color:green; position:absolute; left:203px; top:300px;">
+                    <img src="img/download.png" style = "position:absolute; left:200px; top:180px; " width="100" height="100">  
+                    <div class="dwnhover">
+                    <a href="#" style="color:green; position:absolute; left:203px; top:300px;">
                         <button>
                             DOWNLOAD
                         </button>
                     </a>
+                                        <a href="https://github.com/ExelentOS/ExelentOS-iso/releases/tag/Andromeda" target="_blank" style="color:green; position:absolute; left:190px; top:350px;">
+                        <button>
+                            view github source
+                        </button>
+                    </a>
+                    </div>
                 </div>
                 <div 
               </div>
             </div>
         </div>
-
+        </div>
             </div>
           </div>
         </section>
@@ -246,8 +266,9 @@ particles-js {
 
 
   <!-- Next and previous buttons -->
- 
+ <div data-aos="flip-left">
   <h1 style="position:absolute; top:-150px;">slideshow</h1>
+  </div>
 </div>
 <br>
 
@@ -379,7 +400,7 @@ function showSlides() {
         </section>
         </div>
              <footer>
-           <div>                                  
+           <div data-aos="fade-down">                                  
                
           <div class="container">
             <div class="row">
@@ -412,5 +433,7 @@ function showSlides() {
               }
           });
         </script>
+                <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
     </body>
 </html>
