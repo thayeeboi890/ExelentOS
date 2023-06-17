@@ -37,7 +37,7 @@
     z-index: 1;
     border-bottom: 1px solid none;
 }
-nav .vitunix{
+nav .exelent{
     padding: 5px 20px;
     height: 100px;
     float: left;
@@ -48,7 +48,7 @@ nav .vitunix{
     font-style: bold;
     color: #fff;
 }
-nav .vitunix a:hover{
+nav .exelent a:hover{
     color: white;
 }
 nav .github{
