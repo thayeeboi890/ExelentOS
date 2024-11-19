@@ -2251,7 +2251,7 @@ input, select, textarea {
 
 		body.homepage #header:after {
 			content: '';
-			background: #1C0920;
+			background: #000000;
 			display: block;
 			position: fixed;
 			left: 0;
