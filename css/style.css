@@ -1433,3 +1433,9 @@ nav ul li a{
 		#footer .copyright {
 			font-size: 0.8em;
 		}
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
